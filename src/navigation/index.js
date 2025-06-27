@@ -34,6 +34,7 @@ const AppNavigator = () => {
 
     return (
         <NavigationContainer>
+            
             {!onboardingDone && <OnboardingStack />}
             {onboardingDone && !isLoggedIn && <AuthStack />}
             {onboardingDone && isLoggedIn && <AppStack />}
